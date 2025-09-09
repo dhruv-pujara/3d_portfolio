@@ -1,0 +1,11 @@
+Model Information:
+* title:	Autobus Africaland Mars
+* source:	https://sketchfab.com/3d-models/autobus-africaland-mars-3a03309dfb49443f97bb1728c294dd65
+* author:	Etienne.Bourdages (https://sketchfab.com/Etienne.Bourdages)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Autobus Africaland Mars" (https://sketchfab.com/3d-models/autobus-africaland-mars-3a03309dfb49443f97bb1728c294dd65) by Etienne.Bourdages (https://sketchfab.com/Etienne.Bourdages) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
