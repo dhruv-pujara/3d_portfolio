@@ -6,6 +6,10 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import crystals from "./crystals.png";
+import cauldron from "./cauldron.png";
+import mortar from "./mortar.png";
+import moon from "./moon.png";  
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -32,6 +36,10 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  crystals,
+  cauldron,
+  mortar,
+  moon,
   backend,
   creator,
   mobile,
