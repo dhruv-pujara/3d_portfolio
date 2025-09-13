@@ -50,7 +50,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]"
+        className="mt-4 text-secondary text-[20px] max-w-5xl leading-[30px]"
       >
         I am an aspiring Computer Science student at the University of Calgary with a passion for
         software development, problem-solving, and emerging technologies. Through my academic

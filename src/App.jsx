@@ -10,7 +10,17 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-gradient-to-b from-[#0F0E17] via-[#12101C] to-[#0F0E17]">
+      <div
+        className="
+          relative z-0
+          bg-gradient-to-b
+          from-[#0B0A16]       /* deep cosmic black */
+          via-[#151226]        /* subtle indigo */
+          via-40%
+          to-[#1B0F2F]         /* violet undertone at bottom */
+          text-white
+        "
+      >
         {/* Hero */}
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />

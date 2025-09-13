@@ -139,19 +139,19 @@ const Contact = () => {
                   {/* socials */}
                   <div className="flex justify-start gap-5 text-xl text-zinc-400">
                     <a
-                      href="https://github.com/yourusername"
+                      href="https://github.com/dhruv-pujara"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-white hover:scale-110 transition"
+                      className="hover:text-white hover:scale-130 transition"
                       aria-label="GitHub"
                     >
                       <FaGithub />
                     </a>
                     <a
-                      href="https://linkedin.com/in/yourusername"
+                      href="https://www.linkedin.com/in/dhruv-pujara/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#0A66C2] hover:scale-110 transition"
+                      className="hover:text-[#0A66C2] hover:scale-130 transition"
                       aria-label="LinkedIn"
                     >
                       <FaLinkedin />

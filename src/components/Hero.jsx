@@ -41,17 +41,30 @@ const Hero = () => {
       </div>
 
       {/* scroll indicator */}
-      <div className="absolute xs:bottom-4 bottom-16 w-full flex justify-center items-center z-10">
-        <a href="#about">
-          <div className="w-[24px] h-[48px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 bg-black/10">
-            <motion.div
-              animate={{ y: [0, 24, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
-              className="w-3 h-3 rounded-full bg-white"
-            />
-          </div>
-        </a>
-      </div>
+    <div className="absolute xs:bottom-4 bottom-16 w-full flex justify-center items-center z-20">
+      <a href="#about" aria-label="Scroll to About section">
+        <div
+          className="
+            relative w-[26px] h-[52px]
+            rounded-3xl border-2
+            border-[#915EFF]/70
+            bg-black/30
+            backdrop-blur-sm
+            flex justify-center items-start
+            p-2
+            overflow-hidden
+            shadow-[0_0_24px_-6px_rgba(145,94,255,0.8)]
+          "
+        >
+          <motion.div
+            animate={{ y: [0, 22, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }}
+            className="w-2.5 h-2.5 rounded-full bg-[#915EFF]"
+            style={{ willChange: "transform" }}
+          />
+        </div>
+      </a>
+    </div>
     </section>
   );
 };
