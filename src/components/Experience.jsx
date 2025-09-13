@@ -4,20 +4,28 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
-import SectionWrapper from "../hoc/SectionWrapper";
+import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 // ========== ExperienceCard Component ==========
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: "#1d1836",
+      background: "rgba(29,24,54,0.95)",
       color: "#fff",
-      padding: "24px 20px", // Top-Bottom: 24px, Left-Right: 20px
+      padding: "24px 20px",
+      boxShadow: "0 0 25px rgba(145,94,255,0.3)", // ✨ purple glow
+      borderRadius: "16px",
+      border: "1px solid rgba(145,94,255,0.3)",
     }}
-    contentArrowStyle={{ borderRight: "7px solid #232631" }}
+    contentArrowStyle={{
+      borderRight: "7px solid #915EFF",
+    }}
     date={experience.date}
-    iconStyle={{ background: experience.iconBg }}
+    iconStyle={{
+      background: experience.iconBg,
+      boxShadow: `0 0 20px ${experience.iconBg}, 0 0 40px ${experience.iconBg}`,
+    }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
         <img
@@ -34,7 +42,7 @@ const ExperienceCard = ({ experience }) => (
             href={experience.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline text-[#915EFF]" // Optional styling
+            className="hover:underline text-[#915EFF]"
           >
             {experience.title}
           </a>
@@ -42,8 +50,6 @@ const ExperienceCard = ({ experience }) => (
           experience.title
         )}
       </h3>
-
-      
     </div>
 
     <ul className="mt-5 list-disc pl-6 sm:pl-8 space-y-5 leading-loose">
@@ -69,7 +75,9 @@ const Experience = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline
+          lineColor="rgba(145,94,255,0.5)" // glowing purple line
+        >
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}

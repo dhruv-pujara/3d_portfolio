@@ -29,6 +29,11 @@ import {
   cauldron,
   mortar,
   moon,
+  shuttle,
+  galaxy,
+  falling,
+  planet,
+
 } from "../assets";
 
 
@@ -56,19 +61,19 @@ export const navLinks = [
 const services = [
   {
     title: "Full-Stack Developer",
-    icon: crystals,
+    icon: planet,
   },
   {
     title: "Frontend Developer (React / JavaScript)",
-    icon: cauldron,
+    icon: shuttle,
   },
   {
     title: "Backend Developer (Node.js / SQL)",
-    icon: mortar,
+    icon: falling,
   },
   {
     title: "AI & Cybersecurity Enthusiast",
-    icon: moon,
+    icon: galaxy,
   },
 ];
 

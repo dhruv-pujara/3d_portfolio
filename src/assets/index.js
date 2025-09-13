@@ -9,7 +9,11 @@ import close from "./close.svg";
 import crystals from "./crystals.png";
 import cauldron from "./cauldron.png";
 import mortar from "./mortar.png";
-import moon from "./moon.png";  
+import moon from "./moon.png";
+import planet from "./planet.png";
+import shuttle from "./shuttle.png";
+import falling from "./falling.png";
+import galaxy from "./galaxy.png";  
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -35,6 +39,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  planet,
+  shuttle,
+  falling,
+  galaxy,
   logo,
   crystals,
   cauldron,

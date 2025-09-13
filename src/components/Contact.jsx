@@ -137,7 +137,7 @@ const Contact = () => {
                   </button>
 
                   {/* socials */}
-                  <div className="flex justify-start gap-5 text-xl text-zinc-400">
+                  <div className="flex justify-start gap-5 text-3xl text-zinc-400">
                     <a
                       href="https://github.com/dhruv-pujara"
                       target="_blank"

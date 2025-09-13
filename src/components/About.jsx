@@ -1,4 +1,3 @@
-// About.jsx
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -6,39 +5,49 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import SectionWrapper from "../hoc/SectionWrapper";
+// ❗ FIX: import the named export from the hoc barrel/index
+import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt
-    options={{ max: 45, scale: 1, speed: 450 }}
-    className="w-[220px] sm:w-[230px] lg:w-[250px]"
-  >
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="
-        bg-gradient-to-r from-[#915EFF] to-[#BF61FF]
-        p-[2px]                   /* border thickness */
-        rounded-[22px]            /* OUTER radius */
-        overflow-hidden           /* clip inner to outer radius */
-        shadow-card
-      "
+const ServiceCard = ({ index, title, icon }) => {
+  // Support both image URLs and React components
+  const isReactElement = typeof icon === "object" && icon?.$$typeof;
+  return (
+    <Tilt
+      options={{ max: 45, scale: 1, speed: 450 }}
+      className="w-[220px] sm:w-[230px] lg:w-[250px]"
     >
-      <div
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className="
-          bg-[#151030]
-          rounded-[16px]          /* INNER radius smaller than outer */
-          py-5 px-8 min-h-[300px]
-          flex flex-col items-center justify-evenly
+          bg-gradient-to-r from-[#915EFF] to-[#BF61FF]
+          p-[2px] rounded-[22px] overflow-hidden shadow-card
         "
       >
-        <img src={icon} alt={title} className="w-14 h-14 object-contain" />
-        <h3 className="text-white text-[18px] font-bold text-center mt-3">
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+        <div
+          className="
+            bg-[#151030] rounded-[16px]
+            py-5 px-8 min-h-[300px]
+            flex flex-col items-center justify-evenly
+          "
+        >
+          {isReactElement ? (
+            <div className="text-5xl text-white/90">{icon}</div>
+          ) : (
+            <img
+              src={icon}
+              alt={title}
+              className="w-16 h-16 object-contain"
+              onError={(e) => { e.currentTarget.style.opacity = 0; }}
+            />
+          )}
+          <h3 className="text-white text-[18px] font-bold text-center mt-3">
+            {title}
+          </h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 const About = () => {
   return (
