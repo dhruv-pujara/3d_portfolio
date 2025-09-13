@@ -11,7 +11,7 @@ import SectionWrapper from "../hoc/SectionWrapper";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
     options={{ max: 45, scale: 1, speed: 450 }}
-    className="w-[240px] sm:w-[250px] lg:w-[290px]"
+    className="w-[220px] sm:w-[230px] lg:w-[250px]"
   >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -50,7 +50,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]"
       >
         I am an aspiring Computer Science student at the University of Calgary with a passion for
         software development, problem-solving, and emerging technologies. Through my academic
