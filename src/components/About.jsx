@@ -61,12 +61,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[20px] max-w-5xl leading-[30px]"
       >
-        I am an aspiring Computer Science student at the University of Calgary with a passion for
-        software development and the love for solving complex problems. Through my academic
-        projects, personal projects and leadership in student organizations, I’ve gained hands-on experience with tools
-        like Python, Java, JavaScript, React, and SQL, while developing strong teamwork and communication
-        skills. I am driven to keep learning and applying my knowledge to build innovative, practical
-        solutions that create real impact.
+     At the University of Calgary, I’ve had the chance to work on academic and personal projects that strengthened my skills in Python, Java, JavaScript, React, and SQL. Beyond coding, my involvement in student organizations has helped me grow as a collaborator and communicator, teaching me how to work effectively in a team and take on leadership roles. I’m eager to keep building on these experiences and use my skills to create practical, innovative solutions that make a real impact.
       </motion.p>
 
       <div className="h-12" aria-hidden />

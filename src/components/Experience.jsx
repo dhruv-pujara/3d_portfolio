@@ -36,20 +36,21 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-      <h3 className="text-white text-[24px] font-bold">
-        {experience.link ? (
-          <a
-            href={experience.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline text-[#915EFF]"
-          >
-            {experience.title}
-          </a>
-        ) : (
-          experience.title
-        )}
-      </h3>
+    <h3 className="text-[24px] font-bold">
+      {experience.link ? (
+        <a
+          href={experience.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#915EFF] hover:underline"
+        >
+          {experience.title}
+        </a>
+      ) : (
+        <span className="text-[#915EFF]">{experience.title}</span>
+      )}
+    </h3>
+
     </div>
 
     <ul className="mt-5 list-disc pl-6 sm:pl-8 space-y-5 leading-loose">
