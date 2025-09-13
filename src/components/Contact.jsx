@@ -8,7 +8,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import StarsCanvas from "./canvas/Stars"; // import the stars
+import StarsCanvas from "./canvas/Stars"; 
 
 //template_btpvm6n
 //service_uif529g
@@ -56,12 +56,10 @@ const Contact = () => {
 
   return (
     <div className=" w-full min-h-screen">
-      {/* stars fill the whole section */}
       <div className="absolute inset-0 -z-10">
         <StarsCanvas />
       </div>
 
-      {/* content on top of stars */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start relative z-10">
         {/* LEFT — smaller card */}
         <motion.div

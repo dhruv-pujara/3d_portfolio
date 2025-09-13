@@ -14,7 +14,7 @@ const ExperienceCard = ({ experience }) => (
       background: "rgba(29,24,54,0.95)",
       color: "#fff",
       padding: "24px 20px",
-      boxShadow: "0 0 25px rgba(145,94,255,0.3)", // ✨ purple glow
+      boxShadow: "0 0 25px rgba(145,94,255,0.3)",
       borderRadius: "16px",
       border: "1px solid rgba(145,94,255,0.3)",
     }}
@@ -76,7 +76,7 @@ const Experience = () => {
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline
-          lineColor="rgba(145,94,255,0.5)" // glowing purple line
+          lineColor="rgba(145,94,255,0.5)"
         >
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />

@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const handleNavClick = (title) => {
     setActive(title);
-    setTimeout(() => setActive(""), 300); // reset font size after click
+    setTimeout(() => setActive(""), 300); 
   };
 
   return (

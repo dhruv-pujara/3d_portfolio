@@ -12,12 +12,12 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-      {/* CANVAS behind content, still visible */}
+    
       <div className="absolute inset-0 z-0 pointer-events-none">
         <ComputersCanvas />
       </div>
 
-      {/* CONTENT: shift the whole block to the right with `left-*` */}
+      
       <div
         className={`${styles.paddingX} absolute top-[120px] left-6 sm:left-12 right-0
                     max-w-7xl mx-auto flex flex-row items-start gap-6 z-10`}
