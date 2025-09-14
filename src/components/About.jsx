@@ -14,7 +14,7 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt
       options={{ max: 45, scale: 1, speed: 450 }}
-      className="w-[220px] sm:w-[230px] lg:w-[250px]"
+      className="w-[190px] sm:w-[220px] lg:w-[250px]"
     >
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
