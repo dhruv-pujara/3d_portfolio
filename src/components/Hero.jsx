@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import black from "../assets/black.jpg";
 
 const Hero = () => {
   return (
-    <section
-      className="relative w-full h-screen mx-auto overflow-hidden"
-      style={{
-        backgroundImage: "url('./src/assets/black.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+   <section
+    className="relative w-full h-screen mx-auto overflow-hidden"
+    style={{
+      backgroundImage: `url(${black})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+>
+
     
       <div className="absolute inset-0 z-0 pointer-events-none">
         <ComputersCanvas />
